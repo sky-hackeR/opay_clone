@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
       routes: {
-        SignInScreen.id: (context) => SignInScreen(),
+        SignInScreen.id: (context) => const SignInScreen(),
       },
     );
   }

@@ -11,8 +11,17 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("Home"),
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Row(
+          children: [
+            ListTile(
+              
+            ),
+          ],
+          ),
+      ),
     );
   }
 }

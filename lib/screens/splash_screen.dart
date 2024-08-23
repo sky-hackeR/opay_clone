@@ -14,14 +14,15 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () {
         // Navigate to main screen
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignInScreen()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SignInScreen()));
       },
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green, // Background color
