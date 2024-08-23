@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:opay_clone/screens/sign_in_screen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+
+  void initState() {
+    super.initState();
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        // Navigate to main screen
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignInScreen()));
+      },
+    );
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green, // Background color
