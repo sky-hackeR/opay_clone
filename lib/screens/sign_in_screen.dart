@@ -11,29 +11,59 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
             children: [
-              Icon(
-                Icons.chevron_left,
-                color: Colors.green,
+              const Row(
+                children: [
+                  Icon(
+                    Icons.chevron_left,
+                    color: Colors.green,
+                  ),
+              
+                  SizedBox(width: 10.0,),
+              
+                  Text(
+                    'Sign In',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                    ),
+                  ),
+                ],
+              ),
+              const CircleAvatar(
+                radius: 60.0,
+                backgroundImage: AssetImage('assets/logo/opay.jpg'),
               ),
 
-              SizedBox(width: 10.0,),
+              const SizedBox(height: 20.0),
 
-              Text(
-                'Sign In',
-                style: TextStyle(
-                  fontSize: 15.0,
+              TextField(
+                decoration: InputDecoration(
+                  prefixIcon: Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Row(
+                      children: [
+                        Image.asset('assets/logo/nigeria.png',
+                        width: 24.0,
+                        height: 24.0,
+                        ),
+                      ],
+                    ),
+                    ),
+                    
                 ),
               ),
             ],
           ),
-        
+
+          
+          
+
         ),
       ),
     );
