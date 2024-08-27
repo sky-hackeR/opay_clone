@@ -42,22 +42,22 @@ class _SignInScreenState extends State<SignInScreen> {
 
               const SizedBox(height: 20.0),
 
-              TextField(
-                decoration: InputDecoration(
-                  prefixIcon: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Row(
-                      children: [
-                        Image.asset('assets/logo/nigeria.png',
-                        width: 24.0,
-                        height: 24.0,
-                        ),
-                      ],
-                    ),
-                    ),
+              // TextField(
+              //   decoration: InputDecoration(
+              //     prefixIcon: Padding(
+              //       padding: const EdgeInsets.all(12.0),
+              //       child: Row(
+              //         children: [
+              //           Image.asset('assets/logo/nigeria.png',
+              //           width: 24.0,
+              //           height: 24.0,
+              //           ),
+              //         ],
+              //       ),
+              //       ),
                     
-                ),
-              ),
+              //   ),
+              // ),
             ],
           ),
 
